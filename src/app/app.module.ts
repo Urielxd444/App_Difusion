@@ -8,6 +8,9 @@ import { GaleriaComponent } from './Components/galeria/galeria.component';
 import { InicioComponent } from './COMPONENTES/inicio/inicio.component';
 import { MapasComponent } from './COMPONENTES/mapas/mapas.component';
 import { DatosComponent } from './COMPONENTES/datos/datos.component';
+import { FooterComponent } from './COMPONENTES/footer/footer.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,13 @@ import { DatosComponent } from './COMPONENTES/datos/datos.component';
     GaleriaComponent,
     InicioComponent,
     MapasComponent,
-    DatosComponent
+    DatosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
