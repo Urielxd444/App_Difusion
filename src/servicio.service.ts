@@ -15,4 +15,14 @@ export class ServicioService{
     get(){
         return this.http.get(URL);
     }
+
+        /* GetById(Id:String){
+            return new Observable(observer =>{
+                this.get().subscribe((reult:any{})=>{
+                    const filtro = result.filter(item =>
+                        return observer.next)
+                }
+            })
+         }
+*/
 }

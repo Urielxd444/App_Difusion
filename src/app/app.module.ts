@@ -11,6 +11,7 @@ import { DatosComponent } from './COMPONENTES/datos/datos.component';
 import { FooterComponent } from './COMPONENTES/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { DetalleComponent } from './COMPONENTES/datos/detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     InicioComponent,
     MapasComponent,
     DatosComponent,
-    FooterComponent
+    FooterComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,

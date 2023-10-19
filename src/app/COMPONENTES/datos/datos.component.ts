@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {ServicioService} from '../../../servicio.service';
+import {ServicioService} from 'src/servicio.service';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-datos',
@@ -18,5 +19,9 @@ export class DatosComponent {
     })
 
   }
+Detalle(Id:String){
+  this.router.navigate(['Id',Id]);
+  console.log(Id)
+}
 
 }
